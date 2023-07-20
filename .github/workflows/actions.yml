@@ -1,17 +1,15 @@
 name: run main.py
 
 on:
-  schedule:
-    - cron: '0 0 * * 1' # At 00:00 on Monday
-
-    # Add "id-token" with the intended permissions.
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner
