@@ -1,9 +1,9 @@
 name: Check Kubernetes Files
 
-on: 
+on:
   push:
-    paths:
-      - '**.yaml'
+    branches:
+      - main
 env:
   PROJECT_ID: github-action-393418
   PROJECT_NUMBER: 168241442549
