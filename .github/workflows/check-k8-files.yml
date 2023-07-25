@@ -18,7 +18,7 @@ env:
   PROJECT_NUMBER: 168241442549
   
 jobs:
-  check:
+  build:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
