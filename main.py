@@ -2,7 +2,7 @@
 import logging
 from google.cloud import bigquery
 
-# Construct a BigQuery client object.
+# Construct a BigQuery client object
 client = bigquery.Client()
 
 logger = logging.getLogger(__name__)
